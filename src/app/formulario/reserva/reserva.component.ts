@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-reserva',
-  templateUrl: './reserva.component.html',
-  styles: [
-  ]
+  templateUrl: './reserva.component.html'
 })
-export class ReservaComponent implements OnInit {
+export class ReservaComponent {
+  resp: String = 'No';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  cambioRespuesta(){
+    this.resp == 'No' ? this.resp = 'Si' : this.resp = 'No';
   }
-
 }

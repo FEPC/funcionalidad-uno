@@ -1,39 +1,49 @@
 <ul class="list-group">
     <li class="list-group-item">
         <div class="row">
-            <div class="col-3">Información del asistente</div>
-            <div class="col-3">3</div>
-            <div class="col-3">_______ __</div>
+            <div class="col-4 container">Información del asistente</div>
+            <div class="col-4 container centrado mt-3">3</div>
+            <div class="col-4 container centrado">_______ __</div>
         </div>
     </li>
     <li class="list-group-item">
-        <div class="container">Nombres y Apellidos</div>
+        <div class="container mb-2">Nombres y Apellidos</div>
         <input type="text" class="caja">
     </li>
     <li class="list-group-item">
-        <div class="container">Identificación</div>
+        <div class="container mb-2">Identificación</div>
         <input type="text" class="caja">
     </li>
     <li class="list-group-item">
-        <div class="container">Grupo de riesgo</div>
+        <div class="container mb-2">Grupo de riesgo</div>
         <input type="text" class="caja">
     </li>
     <li class="list-group-item">
-        <div class="container">Convive con grupo de riesgo 1</div>
+        <div class="container mb-2">Convive con grupo de riesgo 1</div>
         <input type="text" class="caja">
     </li>
     <li class="list-group-item">
-        <div class="container">¿Ha tenido sintomas del coronavirus?
+        <div class="container mb-2">¿Ha tenido sintomas del coronavirus?
             (Disnea, fiebre, tos seca, dolor de garganta, 
             dificultad para identificar olores y sabores )
         </div>
+        <div class="row">
+            <button type="button" class="btn btn-inv col-3" (click)="cambioRespuesta()"></button>
+            <div class="col-6 centrado">{{ resp }}</div>
+            <button type="button" class="btn btn-inv col-3" (click)="cambioRespuesta()"></button>
+        </div>
     </li>
     <li class="list-group-item">
-        <div class="container">Indique barrio donde vives 
+        <div class="container mb-2">Indique barrio donde vives 
             y describe la ruta que realizarás
         </div>
-        <input type="text" class="caja">
-        <hr>
+        <input type="text" class="caja caja-sub" placeholder="Descripción">
     </li>
-    <li class="list-group-item"></li>
-</ul>
+    <li class="list-group-item ">
+        <div class="row">
+            <button type="button" class="btn btn-inv col-3">Volver</button>
+            <div class="col-6"></div>
+            <button type="button" class="btn btn-inv col-3">Reserva</button>
+        </div>
+    </li>
+>
