@@ -1,43 +1,45 @@
 <ul class="list-group">
-    <li class="list-group-item">
-        <div class="row">
+    <li class="list-group-item p-0">
+        <div class="row m-3">
             <div class="col-4 container">Información del asistente</div>
-            <div class="col-4 container centrado mt-3">3</div>
+            <div class="col-4 container centrado mt-2">3</div>
             <div class="col-4 container centrado">_______ __</div>
         </div>
     </li>
     <li class="list-group-item">
         <div class="container mb-2">Nombres y Apellidos</div>
-        <input type="text" class="caja">
+        <input type="text" class="caja mb-2">
     </li>
     <li class="list-group-item">
         <div class="container mb-2">Identificación</div>
-        <input type="text" class="caja">
+        <input type="text" class="caja mb-2">
     </li>
     <li class="list-group-item">
         <div class="container mb-2">Grupo de riesgo</div>
-        <input type="text" class="caja">
+        <input type="text" class="caja mb-2">
     </li>
     <li class="list-group-item">
         <div class="container mb-2">Convive con grupo de riesgo 1</div>
-        <input type="text" class="caja">
+        <input type="text" class="caja mb-2">
     </li>
     <li class="list-group-item">
         <div class="container mb-2">¿Ha tenido sintomas del coronavirus?
             (Disnea, fiebre, tos seca, dolor de garganta, 
             dificultad para identificar olores y sabores )
         </div>
-        <div class="row">
-            <button type="button" class="btn btn-inv col-3" (click)="cambioRespuesta()"></button>
+        <div class="row mb-2">
+            <div class="col-2"></div>
+            <button type="button" class="btn btn-inv col-1 pi pi-angle-left" (click)="cambioRespuesta()"></button>
             <div class="col-6 centrado">{{ resp }}</div>
-            <button type="button" class="btn btn-inv col-3" (click)="cambioRespuesta()"></button>
+            <button type="button" class="btn btn-inv col-1 pi pi-angle-right" (click)="cambioRespuesta()"></button>
+            <div class="col-2"></div>
         </div>
     </li>
     <li class="list-group-item">
         <div class="container mb-2">Indique barrio donde vives 
             y describe la ruta que realizarás
         </div>
-        <input type="text" class="caja caja-sub" placeholder="Descripción">
+        <input type="text" class="caja caja-sub mb-2" placeholder="Descripción">
     </li>
     <li class="list-group-item ">
         <div class="row">
@@ -46,4 +48,4 @@
             <button type="button" class="btn btn-inv col-3">Reserva</button>
         </div>
     </li>
->
+</ul>
